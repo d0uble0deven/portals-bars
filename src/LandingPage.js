@@ -25,7 +25,7 @@ const LandingPage = () => {
         return (
             <>
                 <div className="landing-container" onClick={handleEnterClick}>
-                    <h1 className="enter-title">Welcome to the Govindji's VIP Experience</h1>
+                    <h1 className="enter-title">Welcome to the Zappy Hour experience</h1>
                         <button className="enter-button" onClick={handleEnterClick}>
                             Enter
                         </button>

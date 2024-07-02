@@ -14,9 +14,10 @@ body,
 }
 
 body {
+  /* background: #214533; */
   /* background: #5a7f6d; */
-  background: #214533;
   /* background: #f0f0f0; */  
+  background: #ff8400;  
   color: black;
   font-family: 'Inter';
 }
@@ -52,17 +53,33 @@ canvas {
 
 
 .card {
-  background-color: azure;
-  border: #214533 solid 2px;
+  background-color: #fffaf0;
+  border: #ff8400 solid 2px;
   height: fit-content;
-  width: 300px;
+  width: 500px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between; /* Distributes space between columns */
+  align-items: flex-start; /* Align items at the start of the container */
+  width: 90vw;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+}
+.right-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .cardTitle {
-  background-color: #214533;
-  border: #214533 dashed 2px;
+  background-color: #ff8400;
+  border: #ff8400 dashed 2px;
   height: fit-content;
-  color: white;
+  color: #fffaf0;
   width: 400%;
   margin: 0;
   padding :0;
@@ -80,14 +97,14 @@ canvas {
 .mobile-message-title {
   z-index: 10000; 
   position: relative;
-  color: #F0F0F0;
+  color: #ff8400;
 }
 .mobile-message-message {
   z-index: 10000; 
   position: relative;
   padding: 10px 20px;
   font-size: 26px;
-  color: #F0F0F0;
+  color: #ff8400;
   /* background-color: transparent; */
   /* border: 2px solid #F0F0F0; */
   /* margin-top: 20px; */
@@ -107,7 +124,7 @@ canvas {
 .enter-title {
   z-index: 10000; 
   position: relative;
-  color: #F0F0F0;
+  color: #ff8400;
 }
 
 .enter-button {
@@ -115,9 +132,9 @@ canvas {
   position: relative;
   padding: 10px 20px;
   font-size: 16px;
-  color: #F0F0F0;
+  color: #ff8400;
   background-color: transparent;
-  border: 2px solid #F0F0F0;
+  border: 2px solid #ff8400;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   margin-top: 20px;
@@ -125,6 +142,6 @@ canvas {
 }
 
 .enter-button:hover {
-  background-color: #F0F0F0;
-  color: #214533;
+  background-color: #ff8400;
+  color: #F0F0F0;
 }
