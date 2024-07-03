@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portals-bars
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: portals-bars
+  template:
+    metadata:
+      labels:
+        app: portals-bars
+    spec:
+      containers:
+        - name: portals-bars
+          image: devg94/portals-bars:latest
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: portals-bars-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: portals-bars
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
